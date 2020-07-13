@@ -29,7 +29,8 @@ public class LoginPage {
 		txtPassword.sendKeys(pwd);
 	}
 	
-	public void clickSubmit() {
+	public DashboardPage clickSubmit() {
 		btnLogin.click();
+		return new DashboardPage(driver);
 	}
 }
